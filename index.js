@@ -4,11 +4,11 @@ const cors = require("cors");
 
 const io = require("socket.io")(server, {
   cors: {
-        origin: "https://chatty-client-qdc09kcc9-bashordevelopercs-gmailcom.vercel.app",
-        methods: ["GET", "POST"],
-        transports: ['websocket', 'polling'],
-        credentials: true
-    },
+    origin: "https://chatty-client-ivory.vercel.app",
+    methods: ["GET", "POST"],
+    transports: ["websocket", "polling"],
+    credentials: true,
+  },
 });
 
 app.use(cors());
