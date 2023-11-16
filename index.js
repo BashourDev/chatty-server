@@ -6,8 +6,6 @@ const io = require("socket.io")(server, {
   cors: {
     origin: "https://chatty-client-ivory.vercel.app",
     methods: ["GET", "POST"],
-    transports: ["websocket", "polling"],
-    credentials: true,
   },
 });
 
